@@ -18,15 +18,13 @@ const _shadowCss = css`
 		grid-template-rows: 4rem auto 4rem;		
 	}
 
-	.dialog > * {
-		border: solid 1px red;
-	}	
 
 	header{
 		display: grid;
 		grid-template-columns: 1fr 2rem;
 		align-items: center;
 		padding-left: 1rem;
+		border-bottom: solid 1px var(--clr-gray-dark);
 	}	
 
 	section {
@@ -41,6 +39,7 @@ const _shadowCss = css`
 		grid-template-columns: 1fr auto;
 		align-items: center;
 		padding: 0 1rem;
+		border-top: solid 1px var(--clr-gray-dark);
 	}
 
 	.message{
