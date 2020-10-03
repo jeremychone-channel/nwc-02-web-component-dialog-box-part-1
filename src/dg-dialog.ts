@@ -1,4 +1,5 @@
-import { adoptStyleSheets, BaseHTMLElement, css, customElement, html } from 'dom-native';
+import { activateDrag } from '@dom-native/draggable';
+import { adoptStyleSheets, BaseHTMLElement, css, customElement, html, onEvent } from 'dom-native';
 
 const _shadowCss = css`
 	:host{
@@ -25,6 +26,8 @@ const _shadowCss = css`
 		align-items: center;
 		padding-left: 1rem;
 		border-bottom: solid 1px var(--clr-gray-dark);
+		user-select: none;
+		cursor: pointer;		
 	}	
 
 	section {
@@ -55,6 +58,13 @@ const _shadowCss = css`
 
 @customElement('dg-dialog') // same as customElements.define('dg-dialog', DialogComponent)
 class DialogComponent extends BaseHTMLElement { // extends HTMLElement
+
+	get dialogEl() { return this.shadowRoot!.firstElementChild as HTMLElement }
+
+	@onEvent('pointerdown', 'header, [slot="title"]')
+	onHeaderForDrag(evt: PointerEvent) {
+		activateDrag(this.dialogEl, evt);
+	}
 
 	constructor() {
 		super();
