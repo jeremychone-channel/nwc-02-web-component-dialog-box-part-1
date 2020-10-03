@@ -62,15 +62,15 @@ class DialogComponent extends BaseHTMLElement { // extends HTMLElement
 		this.attachShadow({ mode: 'open' }).append(html`
 			<div class="dialog" part="dialog">
 				<header>
-					<span class="title">TITLE</span>
+					<span class="title"><slot name= "title"></slot></span>
 					<c-ico href="#ico-close"></c-ico>
 				</header>
 				<section>
 					<slot></slot>
 				</section>	
 				<footer>
-					<span class="message">MESSAGE</span>
-					<span class="buttons">BUTTONS</span>
+					<span class="message"><slot name="message"></slot></span>
+					<span class="buttons"><slot name="buttons"></slot></span>
 				</footer>							
 			</div> 
 		`);

@@ -14,7 +14,11 @@ class MainView extends BaseHTMLElement { // extends native HTMLElement
 
 		document.body.append(html`
       <dg-dialog>
-        Random Content
+				<div slot="title">Random Title</div>
+				Random Content
+				<div slot="message">Random Message</div>
+				<button slot="buttons" name="cancel">Cancel</div>
+				<button slot="buttons" name="ok">OK</div>
       </dg-dialog>
 		`);
 
