@@ -4,7 +4,7 @@ module.exports = {
 	// the origin for the input (design.sketch)
 	origin: 'https://raw.githubusercontent.com/jeremychone/sketch-files/main/design-quickstart.sketch',
 	// download origin to input if not present (otherwise, needs to do 'npm run sketchdev download' explicitly)
-	download: true,
+	// download: true,
 
 	input: 'design.sketch',
 
