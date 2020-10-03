@@ -66,7 +66,7 @@ class DialogComponent extends BaseHTMLElement { // extends HTMLElement
 					<c-ico href="#ico-close"></c-ico>
 				</header>
 				<section>
-					CONTENT
+					<slot></slot>
 				</section>	
 				<footer>
 					<span class="message">MESSAGE</span>
