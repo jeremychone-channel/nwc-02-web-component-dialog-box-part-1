@@ -1,17 +1,24 @@
 
-## Compososable Dialog Box with Web Component
+## Dialog Box with Web Component - Part 1 - Composition (bonus: Draggable)
 
-[JeremChone Dev Channel](https://www.youtube.com/jeremychone/) Season 01 Episode 02 source code. 
+- [Youtube Episode: S01E02](https://www.youtube.com/watch?v=pdrpeF0P7gY) (thumb up appreciated)
 
-> Technology: [Typescript](https://www.typescriptlang.org/) | [postcss](https://postcss.org/) | [rollup](https://rollupjs.org/) | [native web components](https://developers.google.com/web/fundamentals/web-components/) |  [dom-native library (<7kb gzip, < 17 min.js)](https://www.npmjs.com/package/dom-native)
 
-> THE DOM IS THE FRAMEWORK - ZERO IE TAX | ZERO VIRTUAL DOM | ZERO FRAMEWORK
+This code will show how to create a composable Dialog Box with a web component. Will be using  HTML, CSS, JavaScript, and learning about  Slot, CSS Parts, and ShadowDOM. 
+
+As a bonus, we will make it draggable with a couple of lines of code.
+
+- [Jeremy Chone Dev Channel](https://www.youtube.com/jeremychone/) (subscribe welcome)
+
+> Note: Each step [in the youtube episode](https://www.youtube.com/watch?v=pdrpeF0P7gY) matches a git commit and tag. There might be more commits afterward for code upgrade.
+
 
 ## Install & Run
 
 ```sh
 # Clone the base code to your folder
 git clone git@github.com:jeremchone-channel/s01e02-web-component-dialog-box-part-1.git  dialog-box-part1/
+
 
 cd dialog-box-part1/
 
@@ -36,3 +43,8 @@ After `npm run watch` for **live coding**:
 - `design.sketch` if present and if has sketch installed, generates `svg/sprite.svg` and `pcss.var-colors.pcss`
 
 
+## Approach 
+
+> Technology: [Typescript](https://www.typescriptlang.org/) | [postcss](https://postcss.org/) | [rollup](https://rollupjs.org/) | [native web components](https://developers.google.com/web/fundamentals/web-components/) |  [dom-native library (<7kb gzip, < 17 min.js)](https://www.npmjs.com/package/dom-native)
+
+> THE DOM IS THE FRAMEWORK - ZERO IE TAX | ZERO VIRTUAL DOM | ZERO FRAMEWORK

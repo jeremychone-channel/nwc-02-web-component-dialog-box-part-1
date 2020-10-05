@@ -10,6 +10,12 @@ const _shadowCss = css`
 		height: 1rem;
 		user-select: none;
 	}
+
+	:host(.big){
+		height: 3rem;
+		width: 3rem;
+	}
+	
 	svg{
 		fill: var(--fill);
 		width: 100%;

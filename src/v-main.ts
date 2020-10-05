@@ -15,7 +15,7 @@ class MainView extends BaseHTMLElement { // extends native HTMLElement
 		document.body.append(html`
       <dg-dialog>
 				<div slot="title">Keep it <strong>Simple</strong></div>
-				<c-ico style="height: 3rem; width: 3rem" href='#ico-thumb'></c-ico>
+				<c-ico class="big" href='#ico-thumb'></c-ico>
 				<button slot="buttons" name="ok">SUBSCRIBE</div>
       </dg-dialog>
 		`);

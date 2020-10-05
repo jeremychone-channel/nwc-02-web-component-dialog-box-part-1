@@ -1,11 +1,11 @@
 {
-  "name": "@dom-native/quickstart",
-  "version": "0.1.7",
-  "description": "A minimalistic but scalable starter project for modern and native Web Component frontend development.",
+  "name": "s01e02-web-component-dialog-box-part-1",
+  "version": "0.0.1",
+  "description": "Jeremy Chone Dev Channel",
   "main": "",
   "repository": {
     "type": "git",
-    "url": "git@github.com:dom-native/quickstart.git"
+    "url": "git@github.com:jeremychone-channel/s01e02-web-component-dialog-box-part-1.git"
   },
   "keywords": [],
   "dependencies": {
