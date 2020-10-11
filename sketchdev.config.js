@@ -6,7 +6,7 @@ module.exports = {
 	// download origin to input if not present (otherwise, needs to do 'npm run sketchdev download' explicitly)
 	// download: true,
 
-	input: 'design.sketch',
+	input: 'design-quickstart.sketch',
 
 	output: [{
 		type: 'svg',
@@ -20,10 +20,11 @@ module.exports = {
 		artboard: /^images\/.*/
 	},
 	{
-		type: 'style',
-		out: 'pcss/var-colors.pcss',
-		style: /^clr\/.*/,
-		group: 2
+		type: 'color',
+		out: './pcss/var-colors.pcss',
+		prefix: 'clr-',
+		group: 1,
+		ref: ['prime', 'gray', 'second']
 	}
 	]
 }

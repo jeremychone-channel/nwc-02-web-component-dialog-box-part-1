@@ -12,7 +12,8 @@ const _shadowCss = css`
 		top: 10rem; 
 		left: calc(50% - 11rem);
 		width: 22rem;
-
+		
+		background: #fff;
 		box-shadow: var(--elev-5);
 
 		display: grid;
@@ -25,7 +26,7 @@ const _shadowCss = css`
 		grid-template-columns: 1fr 2rem;
 		align-items: center;
 		padding-left: 1rem;
-		border-bottom: solid 1px var(--clr-gray-dark);
+		border-bottom: solid 1px var(--clr-border);
 		user-select: none;
 		cursor: pointer;		
 	}	
@@ -42,7 +43,7 @@ const _shadowCss = css`
 		grid-template-columns: 1fr auto;
 		align-items: center;
 		padding: 0 1rem;
-		border-top: solid 1px var(--clr-gray-dark);
+		border-top: solid 1px var(--clr-border);
 	}
 
 	.message{
@@ -57,7 +58,7 @@ const _shadowCss = css`
 `
 
 @customElement('dg-dialog') // same as customElements.define('dg-dialog', DialogComponent)
-class DialogComponent extends BaseHTMLElement { // extends HTMLElement
+export class DialogComponent extends BaseHTMLElement { // extends HTMLElement
 
 	get dialogEl() { return this.shadowRoot!.firstElementChild as HTMLElement }
 
